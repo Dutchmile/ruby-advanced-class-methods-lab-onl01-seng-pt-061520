@@ -38,10 +38,6 @@ class Song
   def Song.find_or_create_by_name(name)
     if  self.find_by_name(name) == nil
     self.create_by_name(name)
-    else
-      existing_song = name
-      puts "#{existing_song}"
-    end
   end
 
 
