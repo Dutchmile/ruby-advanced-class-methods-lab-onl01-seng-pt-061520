@@ -45,7 +45,7 @@ class Song
   end
 
   def Song.alphabetical
-  songs_alphabetical = @@all.sort_by {|song| song.alphabetical}
+  songs_alphabetical = @@all.sort_by {|song| song.min}
   songs_alphabetical
   end
 
