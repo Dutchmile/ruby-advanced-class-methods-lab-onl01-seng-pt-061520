@@ -54,6 +54,7 @@ class Song
     new_song.collect do |property|
       name = new_song[0].last.pop
       binding.pry
+    end
   end
 
 end
