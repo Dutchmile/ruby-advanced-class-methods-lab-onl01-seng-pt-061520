@@ -52,6 +52,7 @@ class Song
   def Song.new_from_filename(filename)
     new_song = filename.split(/[^(\w|\s)]/)
     new_song.collect do |property|
+      binding.pry
       name = new_song[0].last.pop
       binding.pry
     end
