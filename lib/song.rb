@@ -39,7 +39,8 @@ class Song
     if  self.find_by_name(name) == nil
     self.create_by_name(name)
   else
-    @@all[self.find_by_name(name)]
+    existing_song = @@all.find {|song| song.name == name}
+    existing_song
   end
   end
 
