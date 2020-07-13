@@ -42,6 +42,9 @@ class Song
     existing_song = @@all.find {|song| song.name == name}
     existing_song
   end
+
+  def Song.alphabetical
+  songs_alphabetical = @@all.sort_by {|song| song.min}
   end
 
 end
