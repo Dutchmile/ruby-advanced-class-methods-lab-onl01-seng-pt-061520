@@ -50,7 +50,8 @@ class Song
   end
 
   def Song.new_from_filename(filename)
-    filename
+    new_song = filename.split(/[^(\w|\s)])
+    binding.pry
   end
 
 end
