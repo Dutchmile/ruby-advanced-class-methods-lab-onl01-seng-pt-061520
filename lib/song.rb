@@ -40,7 +40,7 @@ class Song
     self.create_by_name(name)
     else
       existing_song = name
-      existing_song
+      puts "#{existing_song}"
     end
   end
 
