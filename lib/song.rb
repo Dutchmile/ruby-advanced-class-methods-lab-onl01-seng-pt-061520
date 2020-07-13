@@ -39,7 +39,7 @@ class Song
     if  self.find_by_name(name) == nil
     self.create_by_name(name)
   else
-    @@all[name.find_by_name(name)]
+    @@all[self.find_by_name(name)]
   end
   end
 
