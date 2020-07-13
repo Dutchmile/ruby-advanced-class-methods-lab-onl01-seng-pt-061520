@@ -51,15 +51,15 @@ class Song
 
   def Song.new_from_filename(filename)
     new_song = filename.split(/[^(\w|\s)]/)
-    new_song_properties = new_song.collect do |property|
+  #  new_song_properties = new_song.collect do |property|
       name = new_song[1].split.join(" ")
       artist_name = new_song[0].split.join
       song = Song.new
       song.name = name
       song.artist_name= artist_name
-      binding.pry
-    end
-    new_song_properties
+  #    binding.pry
+  #  end
+  #  new_song_properties
     end
 
 end
