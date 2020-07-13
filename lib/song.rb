@@ -57,6 +57,7 @@ class Song
       song = Song.new
       song.name = name
       song.artist_name= artist_name
+      binding.pry
     end
     new_song_properties
     end
